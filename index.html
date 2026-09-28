@@ -1,198 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhishGuard - Protección Avanzada contra Phishing</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZONA AntiPhishing - Protección Avanzada contra Phishing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="logo">
-                <i class="fas fa-shield-alt"></i>
-                <span>PhishGuard</span>
-            </div>
-            <nav class="nav">
-                <a href="#inicio">Inicio</a>
-                <a href="#caracteristicas">Características</a>
-                <a href="#educacion">Aprende</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <span class="logo-text">
+            <span style="color: #003366; font-weight: bold">ZONA</span>
+            <span style="color: #009966">AntiPhishing</span>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#caracteristicas">Características</a>
+          <a href="#educacion">Aprende</a>
+          <a href="#contacto">Contacto</a>
+          <a href="login.php">Login</a>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Protege tu Empresa del Phishing</h1>
-            <p>Detección inteligente en tiempo real. Mantén tu información segura con tecnología de vanguardia.</p>
-            <button class="btn-primary" id="openModal">
-                <i class="fas fa-rocket"></i> Comenzar Ahora
-            </button>
-        </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Protege tu Empresa del Phishing</h1>
+        <p>
+          Detección inteligente en tiempo real. Mantén tu información segura con
+          tecnología de vanguardia.
+        </p>
+        <button class="btn-primary" id="openModal">
+          <i class="fas fa-user-plus"></i> Registrarse
+        </button>
+      </div>
     </section>
 
     <!-- Características -->
     <section class="features" id="caracteristicas">
-        <div class="container">
-            <h2 class="section-title">Características Principales</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon-wrapper blue">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>IA Avanzada</h3>
-                    <p>Algoritmos de machine learning que detectan patrones sospechosos y amenazas emergentes.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrapper green">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Análisis en Tiempo Real</h3>
-                    <p>Escaneo instantáneo de correos, URLs y archivos adjuntos antes de que lleguen a tu bandeja.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrapper orange">
-                        <i class="fas fa-shield-virus"></i>
-                    </div>
-                    <h3>Protección Multicapa</h3>
-                    <p>Defensa integral que combina filtros de contenido, análisis de enlaces y verificación de remitentes.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrapper purple">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Reportes Detallados</h3>
-                    <p>Dashboard con métricas de amenazas bloqueadas y análisis de tendencias de seguridad.</p>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Características Principales</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="icon-wrapper blue"><i class="fas fa-brain"></i></div>
+            <h3>IA Avanzada</h3>
+            <p>
+              Algoritmos de machine learning que detectan patrones sospechosos.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrapper green"><i class="fas fa-bolt"></i></div>
+            <h3>Análisis en Tiempo Real</h3>
+            <p>Escaneo instantáneo de correos, URLs y archivos adjuntos.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrapper orange">
+              <i class="fas fa-shield-virus"></i>
             </div>
+            <h3>Protección Multicapa</h3>
+            <p>Defensa integral con filtros de contenido y verificación.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrapper purple">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Reportes Detallados</h3>
+            <p>Dashboard con métricas y análisis de tendencias.</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Sección Educativa -->
     <section class="education" id="educacion">
-        <div class="container">
-            <h2 class="section-title">¿Cómo Identificar el Phishing?</h2>
-            <div class="education-grid">
-                <div class="education-block block-red">
-                    <div class="block-icon">
-                        <i class="fas fa-exclamation-triangle"></i>
-                    </div>
-                    <h3>Señales de Alerta</h3>
-                    <ul>
-                        <li>Remitentes desconocidos o sospechosos</li>
-                        <li>Errores ortográficos y gramaticales</li>
-                        <li>Urgencia inusual en el mensaje</li>
-                        <li>Solicitudes de información personal</li>
-                    </ul>
-                </div>
-                <div class="education-block block-blue">
-                    <div class="block-icon">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <h3>Verifica los Enlaces</h3>
-                    <ul>
-                        <li>Pasa el cursor sin hacer clic</li>
-                        <li>Revisa el dominio completo</li>
-                        <li>Busca variaciones sospechosas</li>
-                        <li>Usa herramientas de verificación</li>
-                    </ul>
-                </div>
-                <div class="education-block block-green">
-                    <div class="block-icon">
-                        <i class="fas fa-user-shield"></i>
-                    </div>
-                    <h3>Mejores Prácticas</h3>
-                    <ul>
-                        <li>Nunca compartas contraseñas por email</li>
-                        <li>Habilita autenticación de dos factores</li>
-                        <li>Actualiza software regularmente</li>
-                        <li>Capacita a tu equipo constantemente</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Simulador de Phishing -->
-  <section class="simulador">
-  <div class="container">
-    <h2 class="section-title">Simulador de Phishing</h2>
-    <div id="correoSimulado" class="correo-card"></div>
-    <div class="simulador-buttons">
-      <button onclick="verificarRespuesta('phishing')" class="btn-primary">Es Phishing</button>
-      <button onclick="verificarRespuesta('seguro')" class="btn-primary">Es Seguro</button>
-    </div>
-  </div>
-</section>
-
-    <!-- Verificador de Enlaces -->
-    <section class="verificador">
       <div class="container">
-        <h2 class="section-title">Verificador de Enlaces</h2>
-        <input type="text" id="linkInput" placeholder="Pega aquí un enlace sospechoso" style="padding:10px; width:80%; border-radius:8px;">
-        <button onclick="verificarEnlace()" class="btn-primary">Verificar</button>
-        <!-- Cerramos correctamente el párrafo -->
-        <p id="resultadoLink" style="margin-top:15px; font-weight:bold;"></p>
+        <h2 class="section-title">¿Cómo Identificar el Phishing?</h2>
+        <div class="education-grid">
+          <div class="education-block block-red">
+            <div class="block-icon">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h3>Señales de Alerta</h3>
+            <ul>
+              <li>Remitentes desconocidos o sospechosos</li>
+              <li>Errores ortográficos y gramaticales</li>
+              <li>Urgencia inusual en el mensaje</li>
+              <li>Solicitudes de información personal</li>
+            </ul>
+          </div>
+          <div class="education-block block-blue">
+            <div class="block-icon"><i class="fas fa-link"></i></div>
+            <h3>Verifica los Enlaces</h3>
+            <ul>
+              <li>Pasa el cursor sin hacer clic</li>
+              <li>Revisa el dominio completo</li>
+              <li>Busca variaciones sospechosas</li>
+              <li>Usa herramientas de verificación</li>
+            </ul>
+          </div>
+          <div class="education-block block-green">
+            <div class="block-icon"><i class="fas fa-user-shield"></i></div>
+            <h3>Mejores Prácticas</h3>
+            <ul>
+              <li>Nunca compartas contraseñas por email</li>
+              <li>Habilita autenticación de dos factores</li>
+              <li>Actualiza software regularmente</li>
+              <li>Capacita a tu equipo constantemente</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer" id="contacto">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3><i class="fas fa-shield-alt"></i> PhishGuard</h3>
-                    <p>Protegiendo tu empresa desde 2024. Innovación en seguridad digital.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contacto</h4>
-                    <p><i class="fas fa-envelope"></i> info@phishguard.com</p>
-                    <p><i class="fas fa-phone"></i> +57 (1) 234-5678</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Síguenos</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>
+              <span style="color: #003366; font-weight: bold">ZONA</span>
+              <span style="color: #009966">AntiPhishing</span>
+            </h3>
+            <p>
+              Protegiendo tu empresa desde 2024. Innovación en seguridad
+              digital.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Contacto</h4>
+            <p><i class="fas fa-envelope"></i> info@zonaantiphishing.com</p>
+            <p><i class="fas fa-phone"></i> +57 (1) 234-5678</p>
+            <p><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
+          </div>
+          <div class="footer-section">
+            <h4>Síguenos</h4>
+            <div class="social-links">
+              <a
+                href="https://twitter.com/TU_USUARIO"
+                target="_blank"
+                aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/TU_USUARIO"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/TU_PAGINA"
+                target="_blank"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/TU_USUARIO"
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 PhishGuard. Todos los derechos reservados.</p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 ZONA AntiPhishing. Todos los derechos reservados.</p>
+        </div>
+      </div>
     </footer>
 
-    <!-- Modal -->
+    <!-- Modal de Registro -->
     <div class="modal" id="modal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeModal">&times;</span>
-            <div class="modal-header">
-                <i class="fas fa-check-circle"></i>
-                <h2>¡Comienza tu Prueba Gratuita!</h2>
-            </div>
-            <p>Protege tu empresa con 30 días de prueba sin compromiso.</p>
-            <form class="modal-form">
-                <input type="text" placeholder="Nombre completo" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <input type="text" placeholder="Empresa" required>
-                <input type="tel" placeholder="Teléfono" required>
-                <button type="submit" class="btn-submit">
-                    <i class="fas fa-paper-plane"></i> Solicitar Demo
-                </button>
-            </form>
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <div class="modal-header">
+          <i class="fas fa-user-plus"></i>
+          <h2>¡Regístrate Gratis!</h2>
         </div>
+        <p>Accede a tu demo exclusiva de ZONA AntiPhishing.</p>
+        <form class="modal-form" action="register.php" method="POST">
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre completo"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="email"
+              name="correo"
+              placeholder="Correo electrónico"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              name="password"
+              placeholder="Contraseña"
+              required
+            />
+          </div>
+          <button type="submit" class="btn-submit">
+            <i class="fas fa-paper-plane"></i> Registrarse
+          </button>
+        </form>
+      </div>
     </div>
 
     <!-- Script -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
